@@ -1,8 +1,0 @@
-[build-system]
-requires = ["setuptools>=64", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-markers = ["slow: 需要较长时间运行（数值梯度验证等）"]
-addopts = "-v --tb=short -m 'not slow'"
